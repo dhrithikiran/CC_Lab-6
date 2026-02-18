@@ -29,7 +29,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f nginx-lb || true
-                docker run -d --name nginx-lb -p 8080:80 nginx
+                docker run -d --name nginx-lb -p 9090:80 nginx
                 '''
             }
         }
